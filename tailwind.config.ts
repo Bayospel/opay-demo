@@ -57,6 +57,17 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        opay: {
+          green: "hsl(var(--opay-green))",
+          "green-light": "hsl(var(--opay-green-light))",
+          "green-dark": "hsl(var(--opay-green-dark))",
+          yellow: "hsl(var(--opay-yellow))",
+          orange: "hsl(var(--opay-orange))",
+          blue: "hsl(var(--opay-blue))",
+          purple: "hsl(var(--opay-purple))",
+          red: "hsl(var(--opay-red))",
+          cyan: "hsl(var(--opay-cyan))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

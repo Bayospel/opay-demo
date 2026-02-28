@@ -1,11 +1,11 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import { Home, ArrowLeftRight, Receipt, Clock, User } from "lucide-react";
+import { Home, Heart, TrendingUp, CreditCard, User } from "lucide-react";
 
 const navItems = [
   { path: "/dashboard", label: "Home", icon: Home },
-  { path: "/transfer", label: "Transfer", icon: ArrowLeftRight },
-  { path: "/bills", label: "Bills", icon: Receipt },
-  { path: "/history", label: "History", icon: Clock },
+  { path: "/rewards", label: "Rewards", icon: Heart },
+  { path: "/finance", label: "Finance", icon: TrendingUp },
+  { path: "/cards", label: "Cards", icon: CreditCard },
   { path: "/profile", label: "Me", icon: User },
 ];
 

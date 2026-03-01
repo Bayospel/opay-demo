@@ -76,6 +76,18 @@ export default function Transfer() {
         recipient_account: accountNumber,
         narration,
       });
+
+      // Send push notification to recipient if they're on the platform
+      const senderName = user?.user_metadata?.full_name || user?.email || "Someone";
+      supabase.functions.invoke("send-transfer-notification", {
+        body: {
+          sender_name: senderName,
+          recipient_account: accountNumber,
+          recipient_bank: bankName,
+          amount: parseFloat(amount),
+        },
+      }).catch(console.error); // fire and forget
+
       setStep("success");
     } catch (err: any) {
       toast.error(err.message || "Transfer failed");

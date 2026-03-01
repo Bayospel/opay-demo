@@ -1,1 +1,7 @@
-import React from 'react';\nimport { Button, Badge } from 'react-bootstrap';\n\nconst Header = () => {\n  const userName = 'Bayospel';\n  return (\n    <header className='header'>\n      <div className='user-greeting'>\n        <h1>Welcome, {userName}!</h1>\n      </div>\n      <div className='header-buttons'>\n        <Button variant='info'>Help</Button>\n        <Button variant='success'>Scan</Button>\n        <Badge pill bg='primary' className='notification-badge'>3</Badge>\n      </div>\n    </header>\n  );\n};\n\nexport default Header;
+import React from 'react';
+
+const Header = () => {
+  return null;
+};
+
+export default Header;
